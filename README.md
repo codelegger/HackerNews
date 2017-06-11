@@ -2,6 +2,11 @@
 Hacker News Client
 A simple HackerNews Client
 
+Much needing to be done
+-----------------------
+1.Right Now I have added lazy loading and pull to refresh but i intend to add pagination
+
+
 Features
 ----------
 - Top Stories
@@ -10,10 +15,11 @@ Features
 
 
 I will try to push more updates for other features like 
--User Management
--Bookmarks Handling
--DeepLinking
--Support more level of nested comments
+------------------------------
+- User Management
+- Bookmarks Handling
+- DeepLinking
+- Support more level of nested comments
 
 
 Following libraries are used in project
