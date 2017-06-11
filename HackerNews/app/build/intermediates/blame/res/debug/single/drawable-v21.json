@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/uba/.android/build-cache/3d4d208a76c4dff9b16312a564fe7b05cd359073/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/uba/.android/build-cache/3d4d208a76c4dff9b16312a564fe7b05cd359073/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/uba/.android/build-cache/3d4d208a76c4dff9b16312a564fe7b05cd359073/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/uba/.android/build-cache/3d4d208a76c4dff9b16312a564fe7b05cd359073/output/res/drawable-v21/notification_action_background.xml"
+    }
+]

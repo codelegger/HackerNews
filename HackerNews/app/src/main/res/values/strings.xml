@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hacker News</string>
+    <string name="main_screen_title">Hacker News - Top Stories</string>
+    <string name="ok_string">OK</string>
+    <string name="error_string">Error</string>
+    <string name="pull_to_refresh_msg">Error Loading data. Please Try Pull to Refresh Again</string>
+    <string name="error_msg">Error Loading data. Please Try Again Later.</string>
+    <string name="go_back">GO BACK</string>
+    <string name="tap_for_more_comments">Tap for More Comments</string>
+    <string name="tap_for_hide_comments">Tap to Hide Comments</string>
+</resources>

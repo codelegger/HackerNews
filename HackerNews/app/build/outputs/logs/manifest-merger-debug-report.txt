@@ -1,0 +1,98 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:3:5-53
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:6:22-76
+application
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:9:5-31:19
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/uba/.android/build-cache/3d4d208a76c4dff9b16312a564fe7b05cd359073/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.0.1] /Users/uba/.android/build-cache/c6be17bcd137d755e7aca3d46484c20c233b3e59/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/uba/.android/build-cache/f1112e8b8bb144d678e0ce597c044c50411575e1/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/uba/.android/build-cache/683096fc72bcc565d054624eda016c1958ff4b72/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/uba/.android/build-cache/59b5e84399eda08ccfa5a85126075779eb8b27e8/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/uba/.android/build-cache/219e5ae56640b92d89019ee3792ea813541f5629/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/uba/.android/build-cache/10c5f47d25b0a57d59cdbdde791c5929394bbd27/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/uba/.android/build-cache/b5758dedbff016ad66045c983c72fed363375e9a/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/uba/.android/build-cache/00e76854e78730f33fdc003e681e428f46ca60ef/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.0.1] /Users/uba/.android/build-cache/2416439786fe6aa9ecabd1c9ae5b3a7845d5076d/output/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:13:9-41
+	android:supportsRtl
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:14:9-35
+	android:allowBackup
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:12:9-43
+	android:theme
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:10:9-49
+activity#com.propertyguru.hackernews.hackernews.ui.activities.SplashScreenActivity
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:16:9-24:20
+	android:configChanges
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:18:13-74
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:17:13-63
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:19:13-23:29
+action#android.intent.action.MAIN
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:22:17-77
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:22:27-74
+activity#com.propertyguru.hackernews.hackernews.ui.activities.StoryActivity
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:25:9-27:77
+	android:configChanges
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:27:13-74
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:26:13-56
+activity#com.propertyguru.hackernews.hackernews.ui.activities.CommentsActivity
+ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:28:9-30:77
+	android:configChanges
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:30:13-74
+	android:name
+		ADDED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml:29:13-59
+uses-sdk
+INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.0.1] /Users/uba/.android/build-cache/3d4d208a76c4dff9b16312a564fe7b05cd359073/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.0.1] /Users/uba/.android/build-cache/c6be17bcd137d755e7aca3d46484c20c233b3e59/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.0.1] /Users/uba/.android/build-cache/f1112e8b8bb144d678e0ce597c044c50411575e1/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.0.1] /Users/uba/.android/build-cache/683096fc72bcc565d054624eda016c1958ff4b72/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.0.1] /Users/uba/.android/build-cache/59b5e84399eda08ccfa5a85126075779eb8b27e8/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.0.1] /Users/uba/.android/build-cache/219e5ae56640b92d89019ee3792ea813541f5629/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.0.1] /Users/uba/.android/build-cache/10c5f47d25b0a57d59cdbdde791c5929394bbd27/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:cardview-v7:25.0.1] /Users/uba/.android/build-cache/b5758dedbff016ad66045c983c72fed363375e9a/output/AndroidManifest.xml:20:5-43
+MERGED from [io.reactivex:rxandroid:1.0.1] /Users/uba/.android/build-cache/dbb7c127bac94c8c37574f8bafe6885298efe044/output/AndroidManifest.xml:19:5-43
+MERGED from [com.bignerdranch.android:expandablerecyclerview:3.0.0-RC1] /Users/uba/.android/build-cache/c987abf5d8134ebbe62c026ce4ad85969d5f5b92/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:25.0.1] /Users/uba/.android/build-cache/c110686e786a6f45efa196ed30e67ac2bcf286e9/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.0.1] /Users/uba/.android/build-cache/00e76854e78730f33fdc003e681e428f46ca60ef/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.0.1] /Users/uba/.android/build-cache/2416439786fe6aa9ecabd1c9ae5b3a7845d5076d/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.0.1] /Users/uba/.android/build-cache/3d4d208a76c4dff9b16312a564fe7b05cd359073/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/uba/projects/pg/HackerNews/HackerNews/app/src/main/AndroidManifest.xml
