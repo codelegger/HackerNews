@@ -33,13 +33,6 @@ public class ApiHandler {
         this.subscribeScheduler = scheduler;
     }
 
-    public void setFeedService(FeedService newsFeedService) {
-        feedService = newsFeedService;
-    }
-
-    public void setScheduler(Scheduler scheduler) {
-        subscribeScheduler = scheduler;
-    }
 
     public Scheduler getScheduler() {
         return subscribeScheduler;

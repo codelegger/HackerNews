@@ -19,10 +19,22 @@ public class TestUtil {
         story.title = "Mock Story" + story.id;
         story.score = 9999L;
         story.by = "XXXXX";
+        story.time = new Random().nextLong();
         story.kids = new ArrayList<>();
         return story;
     }
 
+    public static Story createMockStoryWithStory(Story mockIt) {
+        Story story = new Story();
+        story.id = mockIt.id;
+        story.url = mockIt.url;
+        story.title = mockIt.title;
+        story.score = mockIt.score;
+        story.by = mockIt.by;
+        story.time = mockIt.time;
+        story.kids = new ArrayList<>();
+        return story;
+    }
     public static Comment createMockComment(){
         Comment mockComment = new Comment();
 

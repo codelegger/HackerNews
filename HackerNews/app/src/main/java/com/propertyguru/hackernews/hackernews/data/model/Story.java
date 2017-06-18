@@ -147,7 +147,7 @@ public class Story implements Parcelable {
         this.by = in.readString();
         this.id = (Long) in.readValue(Long.class.getClassLoader());
         this.time = (Long) in.readValue(Long.class.getClassLoader());
-        this.kids = (ArrayList<Long>) in.readSerializable();
+        this.kids = (ArrayList<Long>) in.readSerializable();//todo
         this.url = in.readString();
         this.score = (Long) in.readValue(Long.class.getClassLoader());
         this.title = in.readString();

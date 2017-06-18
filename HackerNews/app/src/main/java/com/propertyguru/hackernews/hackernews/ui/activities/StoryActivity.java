@@ -165,7 +165,7 @@ public class StoryActivity extends AppCompatActivity {
         }
     }
 
-    private void sortStories(){
+    public void sortStories(){
         //Sort Bit rates in ascending order
         Collections.sort(mStories, new Comparator<Story>() {
             @Override
@@ -175,4 +175,14 @@ public class StoryActivity extends AppCompatActivity {
         });
 
     }
+
+    public void setStories(ArrayList<Story> storiesList)
+    {
+        mStories = storiesList;
+    }
+    public ArrayList<Story> getStories()
+    {
+        return mStories;
+    }
+
 }

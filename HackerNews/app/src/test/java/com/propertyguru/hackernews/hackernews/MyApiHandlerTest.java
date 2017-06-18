@@ -47,6 +47,47 @@ public class MyApiHandlerTest {
 
 
     @Test
+    public void testGetStoriesByIds() throws Exception {
+
+        Story mockStoryOne = TestUtil.createMockStory();
+        Story mockStoryTwo = TestUtil.createMockStory();
+        Story mockStoryThree = TestUtil.createMockStory();
+        Story mockStoryFour = TestUtil.createMockStory();
+
+        when(mockFeederService.getStoryItem(String.valueOf(mockStoryOne.id)))
+                .thenReturn(Observable.just(mockStoryOne));
+        when(mockFeederService.getStoryItem(String.valueOf(mockStoryTwo.id)))
+                .thenReturn(Observable.just(mockStoryTwo));
+        when(mockFeederService.getStoryItem(String.valueOf(mockStoryThree.id)))
+                .thenReturn(Observable.just(mockStoryThree));
+        when(mockFeederService.getStoryItem(String.valueOf(mockStoryFour.id)))
+                .thenReturn(Observable.just(mockStoryFour));
+
+        final List<Long> storyIds = new ArrayList<>();
+        storyIds.add(mockStoryOne.id);
+        storyIds.add(mockStoryTwo.id);
+        storyIds.add(mockStoryThree.id);
+        storyIds.add(mockStoryFour.id);
+
+        final List<Story> stories = new ArrayList<>();
+
+        mockDataManager.getPostsFromIds(storyIds).subscribe(new Action1<Story>() {
+            @Override
+            public void call(Story story) {
+                stories.add(story);
+            }
+        });
+
+        Assert.assertEquals(4, stories.size());
+        Assert.assertTrue(stories.contains(mockStoryOne));
+        Assert.assertTrue(stories.contains(mockStoryTwo));
+        Assert.assertTrue(stories.contains(mockStoryThree));
+        Assert.assertTrue(stories.contains(mockStoryFour));
+
+    }
+
+
+    @Test
     public void testTopStories() throws Exception {
 
 
@@ -72,7 +113,11 @@ public class MyApiHandlerTest {
 
         final List<Story> stories = new ArrayList<>();
 
-        mockDataManager.getPostsFromIds(storyIds).subscribe(new Action1<Story>() {
+        when(mockFeederService.getTopStories())
+                .thenReturn(Observable.just(storyIds));
+
+
+        mockDataManager.getTopStories().subscribe(new Action1<Story>() {
             @Override
             public void call(Story story) {
                 stories.add(story);
@@ -113,10 +158,9 @@ public class MyApiHandlerTest {
 
 
 
-    @Test
-    public void test1()
-    {
 
-    }
+
+
+
 
 }
