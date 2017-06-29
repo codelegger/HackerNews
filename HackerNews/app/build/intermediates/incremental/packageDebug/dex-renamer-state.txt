@@ -1,0 +1,7 @@
+#Wed Jun 28 03:20:27 SGT 2017
+base.0=/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2912642f62660aed58caabdddad4ff801cbb7e3a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c962022e0a8ac565e189c62fc3b217a7b83f82be/classes.dex
+base.1=/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c962022e0a8ac565e189c62fc3b217a7b83f82be
+file.0=/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2912642f62660aed58caabdddad4ff801cbb7e3a/classes.dex

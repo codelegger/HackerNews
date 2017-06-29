@@ -1,0 +1,4 @@
+#Wed Jun 28 03:20:26 SGT 2017
+base.0=/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7
+renamed.0=classes.dex
+file.0=/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex

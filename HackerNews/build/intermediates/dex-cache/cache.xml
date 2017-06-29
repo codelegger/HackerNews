@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="42cc2ab71d91966164401d6e78ff150d95cfef00">
+        <dex dex="/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c962022e0a8ac565e189c62fc3b217a7b83f82be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/uba/projects/pg/HackerNews/HackerNews/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_2912642f62660aed58caabdddad4ff801cbb7e3a/classes.dex" />
+    </item>
+
+</items>

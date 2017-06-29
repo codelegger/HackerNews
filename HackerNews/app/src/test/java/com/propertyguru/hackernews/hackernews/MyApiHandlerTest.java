@@ -4,6 +4,7 @@ import com.propertyguru.hackernews.hackernews.data.manager.ApiHandler;
 import com.propertyguru.hackernews.hackernews.data.model.Comment;
 import com.propertyguru.hackernews.hackernews.data.model.Story;
 import com.propertyguru.hackernews.hackernews.data.server.FeedService;
+import com.propertyguru.hackernews.hackernews.data.server.RetroFitManager;
 import com.propertyguru.hackernews.hackernews.utils.TestUtil;
 
 import junit.framework.Assert;
@@ -41,6 +42,8 @@ public class MyApiHandlerTest {
     public void setUp() {
         mockFeederService = mock(FeedService.class);
 
+        RetroFitManager manager = mock(RetroFitManager.class);
+        when(manager.fsInstance()).thenReturn(mockFeederService);
         mockDataManager = new ApiHandler(mockFeederService,
                 Schedulers.immediate());
     }
@@ -54,10 +57,10 @@ public class MyApiHandlerTest {
         Story mockStoryThree = TestUtil.createMockStory();
         Story mockStoryFour = TestUtil.createMockStory();
 
-        when(mockFeederService.getStoryItem(String.valueOf(mockStoryOne.id)))
-                .thenReturn(Observable.just(mockStoryOne));
         when(mockFeederService.getStoryItem(String.valueOf(mockStoryTwo.id)))
                 .thenReturn(Observable.just(mockStoryTwo));
+        when(mockFeederService.getStoryItem(String.valueOf(mockStoryOne.id)))
+                .thenReturn(Observable.just(mockStoryOne));
         when(mockFeederService.getStoryItem(String.valueOf(mockStoryThree.id)))
                 .thenReturn(Observable.just(mockStoryThree));
         when(mockFeederService.getStoryItem(String.valueOf(mockStoryFour.id)))

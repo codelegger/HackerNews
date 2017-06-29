@@ -49,6 +49,7 @@ public class StoryActivity extends AppCompatActivity {
         pbLoadingLayout = (RelativeLayout) findViewById(R.id.pbLoadingLayout);
         srContainer = (SwipeRefreshLayout) findViewById(R.id.srContainer);
 
+
         init();
     }
 

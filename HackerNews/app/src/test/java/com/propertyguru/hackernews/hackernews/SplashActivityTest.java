@@ -46,7 +46,7 @@ public class SplashActivityTest {
 
         //controller = Robolectric.buildActivity(SplashScreenActivity.class).create();
        // mySplasActivity = controller.get();
-        mySplasActivity = Robolectric.buildActivity(SplashScreenActivity.class).create().resume().get();
+        mySplasActivity = Robolectric.setupActivity(SplashScreenActivity.class);
     }
 
 
@@ -62,5 +62,6 @@ public class SplashActivityTest {
     @After
     public void tearDown() {
         mySplasActivity.finish();
+        mySplasActivity = null ;
     }
 }

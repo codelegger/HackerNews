@@ -19,7 +19,10 @@ import com.propertyguru.hackernews.hackernews.ui.HackerNewsApplication;
 
 public class AppUtils {
     public static boolean isNetworkConnected() {
-return false;
+
+        ConnectivityManager connectivityManager = (ConnectivityManager) HackerNewsApplication.getsInstance().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     //Show LONG Toast to User

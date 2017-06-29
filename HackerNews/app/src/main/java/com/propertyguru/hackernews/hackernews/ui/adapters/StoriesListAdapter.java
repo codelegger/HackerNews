@@ -121,7 +121,7 @@ public class StoriesListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
         isRefreshing = pullToRefresh;
     }
 
-    private Intent getCommentActivityIntent(Context context, Story story) {
+    private  Intent getCommentActivityIntent(Context context, Story story) {
         Intent intent = new Intent(context, CommentsActivity.class);
         intent.putExtra(AppConstants.EXTRA_ITEM, story);
         return intent;

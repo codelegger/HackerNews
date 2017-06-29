@@ -1,17 +1,24 @@
 package com.propertyguru.hackernews.hackernews;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 
 import com.propertyguru.hackernews.hackernews.data.manager.ApiHandler;
 import com.propertyguru.hackernews.hackernews.data.model.Story;
 import com.propertyguru.hackernews.hackernews.data.server.FeedService;
+import com.propertyguru.hackernews.hackernews.ui.HackerNewsApplication;
 import com.propertyguru.hackernews.hackernews.ui.activities.CommentsActivity;
 import com.propertyguru.hackernews.hackernews.ui.activities.SplashScreenActivity;
 import com.propertyguru.hackernews.hackernews.ui.activities.StoryActivity;
 
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Parcel;
+import android.support.v4.net.ConnectivityManagerCompat;
 import android.support.v7.widget.RecyclerView;
+import org.robolectric.shadows.ShadowConnectivityManager;
+import org.robolectric.shadows.ShadowNetworkInfo;
 
 import junit.framework.Assert;
 
@@ -21,6 +28,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
+import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowLooper;
@@ -30,10 +38,14 @@ import android.view.View;
 import static org.assertj.core.api.Java6Assertions.assertThat;
 import com.propertyguru.hackernews.hackernews.ui.adapters.StoriesListAdapter;
 import com.propertyguru.hackernews.hackernews.utils.AppConstants;
+import com.propertyguru.hackernews.hackernews.utils.AppUtils;
 import com.propertyguru.hackernews.hackernews.utils.TestUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+import static org.robolectric.RuntimeEnvironment.*;
 
 /**
 import static org.mockito.Mockito.mock;
@@ -54,13 +66,12 @@ public class TopStoryActivityTest {
 
     private StoryActivity activity;
 
+    private ConnectivityManager connectivityManager;
+    private ShadowConnectivityManager shadowConnectivityManager;
+    private ShadowNetworkInfo shadowOfActiveNetworkInfo;
 
     @Before
     public void setUp() {
-
-        //controller = Robolectric.buildActivity(SplashScreenActivity.class).create();
-        // mySplasActivity = controller.get();
-         //activity = Robolectric.buildActivity(StoryActivity.class).create().start().resume().get();
         activity = Robolectric.setupActivity(StoryActivity.class);
     }
 
@@ -113,9 +124,6 @@ public class TopStoryActivityTest {
     }
 
 
-
-
-
     @Test
     public void testScrollStories() throws Exception {
 
@@ -162,6 +170,7 @@ public class TopStoryActivityTest {
         leftDrawer.setAdapter(storiesListAdapter);
         activity.setStories(stories);
         activity.sortStories();
+
         boolean expected = activity.getStories().size()>1&& (activity.getStories().get(0).time >= activity.getStories().get(1).time);
 
         Assert.assertEquals(true, expected);
@@ -199,6 +208,7 @@ public class TopStoryActivityTest {
     @After
     public void tearDown() {
         activity.finish();
+        activity = null ;
     }
 
 }
